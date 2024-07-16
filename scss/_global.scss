@@ -6,6 +6,11 @@
   line-height: 15px;
   color: #000000;
 }
+.wrapper {
+  margin: 0 auto;
+  border: 1px solid black;
+  background: $background-color;
+}
 h1 {
   font-style: 24px;
   line-height: 30px;
