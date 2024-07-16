@@ -19,6 +19,7 @@ h1 {
 }
 
 h2 {
+  margin: 0 auto;
   font-style: 16px;
   line-height: 20px;
 }
@@ -56,4 +57,10 @@ svg {
 .search-icon {
   width: 15px;
   height: 15px;
+}
+
+.random-number__game-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
 }
