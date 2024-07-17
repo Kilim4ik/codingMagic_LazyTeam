@@ -28,15 +28,7 @@ svg {
   height: 100%;
 }
 
-.search-input-container {
-  display: flex;
-  width: 150px;
-  background-color: #d7d7d7;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-}
-.search-input__input {
+.search-input {
   width: 95px;
   padding: 0;
   background-color: #d7d7d7;
@@ -45,8 +37,15 @@ svg {
   border: none;
   margin: 10px;
 }
-
-.input-element {
+.search-input-container {
+  display: flex;
+  width: 150px;
+  background-color: #d7d7d7;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+.search-input__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +68,6 @@ svg {
   outline: none;
   border: none;
   padding: 10px 20px;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 20px;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
 }
