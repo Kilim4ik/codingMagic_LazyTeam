@@ -1,11 +1,18 @@
 "use strict";
 const randomNumber = Math.round(Math.random() * 100);
 
-const input = document.querySelector(".search-input__input");
-input.addEventListener("blur", () => {
-  const userNumber = input.target.value;
-  const massege = document.querySelector(".random-number__massege");
-  if (randomNumber == Number(userNumber)) {
-    massege.innerHTML("");
+const inputTask2 = document.querySelector("#task2-input");
+const buttonTask2 = document.querySelector("#task2-button");
+const massegeTask2 = document.querySelector("#task2-massege");
+console.log(randomNumber);
+buttonTask2.addEventListener("click", () => {
+  const userNum = inputTask2.value;
+
+  if (randomNumber == Number(userNum)) {
+    massegeTask2.innerHTML = `Вітаю, ви вгадали число! (${randomNumber}) `;
+    massegeTask2.style.color = "#039900 ";
+  } else {
+    massegeTask2.innerHTML = `Ви програли, комп’ютер загадав (${randomNumber}) `;
+    massegeTask2.style.color = "#990000";
   }
 });
