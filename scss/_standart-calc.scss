@@ -1,0 +1,30 @@
+.standart-calc {
+  &__game-container {
+    display: flex;
+    align-items: center;
+  }
+  &__operator {
+    display: flex;
+
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: $txt-main-color;
+    color: $background-color;
+    &-block {
+      display: grid;
+      grid-template-rows: repeat(2, 25px);
+      grid-template-columns: repeat(2, 25px);
+      gap: 10px;
+    }
+  }
+  &__result {
+    background: $input-color;
+    color: $placeholder;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}
