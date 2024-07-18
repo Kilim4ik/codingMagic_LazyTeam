@@ -1,0 +1,21 @@
+.football {
+  &-section {
+    display: grid;
+    justify-content: center;
+  }
+  &-field {
+    width: 720px;
+    height: 220px;
+    background-color: #5abb58;
+    border: 2px solid $txt-main-color;
+    border-radius: 37px;
+    margin-top: 36px;
+    position: relative;
+  }
+  &-ball {
+    border-radius: 50px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+  }
+}
