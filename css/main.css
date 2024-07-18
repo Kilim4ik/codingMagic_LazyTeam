@@ -58,3 +58,51 @@ svg {
   width: 15px;
   height: 15px;
 }
+
+body {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.rock-paper-scissors__choices {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.rock-paper-scissors__choice {
+  width: Hug 60px px;
+  height: Hug 60px px;
+  padding: 10px 0px 0px 0px;
+  gap: 10px;
+  border: none;
+  background-color: #000000;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.rock-paper-scissors__result {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.rock-paper-scissors__header {
+  display: flex;
+  justify-content: center;
+}
+
+.score {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.button_img {
+  width: 40px;
+  height: 40px;
+  gap: 0px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+}
