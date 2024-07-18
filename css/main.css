@@ -29,31 +29,39 @@ svg {
   height: 100%;
 }
 
-.search-input-container {
-  display: inline-block;
-  background-color: #d7d7d7;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-}
-.search-input__input {
+.basic-input {
+  width: 95px;
+  padding: 0;
   background-color: #d7d7d7;
   color: #7e7e7e;
   outline: none;
   border: none;
-  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-.input-element {
+.search-input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: none;
+}
+.search-input-container {
+  display: flex;
+  width: 150px;
+  background-color: #d7d7d7;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+.search-input__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 35px;
   height: 35px;
   background-color: #000000;
   border-radius: 0px 20px 20px 0px;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
-
 .search-icon {
   width: 15px;
   height: 15px;
