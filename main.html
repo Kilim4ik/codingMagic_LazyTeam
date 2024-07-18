@@ -16,7 +16,18 @@
   <body>
     <header></header>
     <main>
-      <div class="wrapper"></div>
+
+      <div class="wrapper">
+        <h2 class="rock-paper-scissors__header">Камінь-Ножиці-Папір</h2>
+        <div class="rock-paper-scissors__choices">
+          <button class="rock-paper-scissors__choice" onclick="playGame('камінь')"><img class="button_img" src="./images/stone.png" alt="rock"></button>
+          <button class="rock-paper-scissors__choice" onclick="playGame('ножиці')"><img class="button_img" src="./images/scissors.png" alt="scissors"></button>
+          <button class="rock-paper-scissors__choice" onclick="playGame('папір')"><img class="button_img" src="./images/paper.png" alt="paper"></button>
+      </div>
+      <div class="rock-paper-scissors__result" id="result">Виберіть свій варіант</div>
+      <button style="color: white;" onclick="showResult()">Варіант комп’ютера</button>
+      <div class="score" id="score">Рахунок: Комп'ютер - 0, Ви - 0</div>
+    </div>
     </main>
     <footer></footer>
     <script src="./main.js"></script>
