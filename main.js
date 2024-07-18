@@ -8,7 +8,8 @@ const standCalcOperations = document.querySelectorAll(
 );
 let result, firstNum, secondNum, mark;
 
-for (let elem of standCalcOperations) {
+standCalcOperations.forEach((elem) => standCalc(elem));
+function standCalc(elem) {
   elem.addEventListener("click", (e) => {
     if (elem.textContent == "=") {
       firstNum = Number(standCalcFirstNum.value);
