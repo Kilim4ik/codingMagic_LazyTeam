@@ -44,6 +44,7 @@ svg {
   width: 95px;
   padding: 0;
   background-color: #d7d7d7;
+  box-sizing: content-box;
   color: #7e7e7e;
   outline: none;
   border: none;

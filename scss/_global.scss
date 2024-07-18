@@ -38,6 +38,7 @@ svg {
   width: 95px;
   padding: 0;
   background-color: $input-color;
+  box-sizing: content-box;
   color: $placeholder;
   outline: none;
   border: none;
