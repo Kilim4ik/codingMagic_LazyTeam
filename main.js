@@ -9,6 +9,7 @@ footballField.addEventListener("mousedown", (e) => {
   if (e.offsetX < 25) x = 25 - footballBall.width / 2;
   if (e.offsetY < 25) y = 25 - footballBall.height / 2;
   if (e.offsetX >= footballField.offsetWidth)
+//   else e.
     x = footballField.offsetWidth - footballBall.width / 2;
   if (e.offsetY >= footballField.offsetWidth)
     y = footballField.offsetWidth - footballBall.height / 2;
