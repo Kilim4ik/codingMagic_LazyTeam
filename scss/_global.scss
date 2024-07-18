@@ -11,47 +11,61 @@
   border: 1px solid black;
   background: $background-color;
 }
+.line {
+  width: 536px;
+  border: 1px solid $txt-main-color;
+}
 h1 {
-  font-style: 24px;
+  font-size: 24px;
   line-height: 30px;
+  align-items: center;
 }
 h2 {
   text-align: center;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 20px;
+  margin: 36px 0;
 }
 svg {
   width: 100%;
   height: 100%;
 }
+.basic-input {
+  width: 95px;
+  padding: 0;
+  background-color: $input-color;
+  color: $placeholder;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+
 .search {
   &-input {
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: none;
     &-container {
-      display: inline-block;
+      display: flex;
+      width: 150px;
       background-color: $input-color;
-      position: relative;
       border-radius: 20px;
       box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
     }
-    &__input {
-      background-color: $input-color;
-      color: $placeholder;
-      outline: none;
-      border: none;
-      margin: 10px;
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background-color: $txt-main-color;
+      border-radius: 0px 20px 20px 0px;
     }
   }
-}
-.input-element {
-  width: 35px;
-  height: 35px;
-  background-color: $txt-main-color;
-  border-radius: 0px 20px 20px 0px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.search-icon {
-  width: 15px;
-  height: 15px;
+  &-icon {
+    width: 15px;
+    height: 15px;
+  }
 }
