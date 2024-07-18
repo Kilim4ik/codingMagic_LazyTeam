@@ -18,17 +18,31 @@
     <main>
       <div class="wrapper">
         <section class="standart-calc">
+          <span class="line"></span>
           <div class="standart-calc__container">
             <h2>Калькулятор</h2>
             <div class="standart-calc__game-container">
-              <input type="text" name="" id="standart-calc-first-num" />
+              <input
+                class="basic-input"
+                type="text"
+                name=""
+                id="standart-calc-first-num"
+                placeholder="Введіть число"
+              />
               <div class="standart-calc__operator-block">
                 <button class="standart-calc__operator">+</button>
                 <button class="standart-calc__operator">-</button>
                 <button class="standart-calc__operator">*</button>
                 <button class="standart-calc__operator">/</button>
               </div>
-              <input type="text" name="" id="standart-calc-second-num" />
+
+              <input
+                class="basic-input"
+                type="text"
+                name=""
+                id="standart-calc-second-num"
+                placeholder="Введіть число"
+              />
               <button class="standart-calc__operator">=</button>
 
               <p class="standart-calc__result">Результат</p>
