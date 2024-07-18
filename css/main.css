@@ -28,14 +28,22 @@ svg {
   height: 100%;
 }
 
-.search-input {
+.basic-input {
   width: 95px;
   padding: 0;
   background-color: #d7d7d7;
   color: #7e7e7e;
   outline: none;
   border: none;
-  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: none;
 }
 .search-input-container {
   display: flex;
@@ -53,20 +61,7 @@ svg {
   background-color: #000000;
   border-radius: 0px 20px 20px 0px;
 }
-
 .search-icon {
   width: 15px;
   height: 15px;
-}
-
-.basic-input {
-  width: 95px;
-  padding: 0;
-  background-color: #d7d7d7;
-  color: #7e7e7e;
-  outline: none;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
 }
