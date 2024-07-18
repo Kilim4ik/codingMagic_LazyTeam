@@ -61,6 +61,7 @@ svg {
 
 .standart-calc__game-container {
   display: flex;
+  gap: 38px;
   align-items: center;
 }
 .standart-calc__operator {

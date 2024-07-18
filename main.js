@@ -6,21 +6,33 @@ const standCalcResult = document.querySelector(".standart-calc__result");
 const standCalcOperations = document.querySelectorAll(
   ".standart-calc__operator"
 );
+let result, firstNum, secondNum, mark;
+
 for (let elem of standCalcOperations) {
-  let result;
-  elem.addEventListener("click", () => {
-    let result = "error";
-    switch (elem.textContent) {
-      case "+":
-        result = standCalcFirstNum + standCalcSecondNum;
-      case "-":
-        result = standCalcFirstNum + standCalcSecondNum;
-      case "+":
-        result = standCalcFirstNum + standCalcSecondNum;
-      case "+":
-        result = standCalcFirstNum + standCalcSecondNum;
-      default:
-        result = "error";
+  elem.addEventListener("click", (e) => {
+    if (elem.textContent == "=") {
+      firstNum = Number(standCalcFirstNum.value);
+      secondNum = Number(standCalcSecondNum.value);
+      switch (mark) {
+        case "+":
+          result = firstNum + secondNum;
+          break;
+        case "-":
+          result = firstNum - secondNum;
+          break;
+
+        case "*":
+          result = firstNum * secondNum;
+          break;
+
+        case "/":
+          if (secondNum) result = firstNum / secondNum;
+          else result = "error";
+          break;
+      }
+      standCalcResult.innerHTML = result;
+    } else {
+      mark = e.target.textContent;
     }
   });
 }

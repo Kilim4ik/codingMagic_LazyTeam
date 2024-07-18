@@ -1,6 +1,8 @@
 .standart-calc {
   &__game-container {
     display: flex;
+
+    gap: 38px;
     align-items: center;
   }
   &__operator {
