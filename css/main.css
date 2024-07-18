@@ -64,6 +64,7 @@ svg {
   justify-content: center;
 }
 .football-field {
+  display: block;
   width: 720px;
   height: 220px;
   background-color: #5abb58;
