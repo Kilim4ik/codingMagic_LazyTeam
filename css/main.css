@@ -13,15 +13,22 @@
   background: #fff;
 }
 
+.line {
+  width: 536px;
+  border: 1px solid #000000;
+}
+
 h1 {
-  font-style: 24px;
+  font-size: 24px;
   line-height: 30px;
+  align-items: center;
 }
 
 h2 {
-  margin: 0 auto;
-  font-style: 16px;
+  align-items: center;
+  font-size: 16px;
   line-height: 20px;
+  margin: 36px 0;
 }
 
 svg {
