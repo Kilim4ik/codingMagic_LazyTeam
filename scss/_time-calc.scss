@@ -1,0 +1,13 @@
+.time-calc {
+  &-container {
+    width: 392px;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__decor {
+    width: 100px;
+    height: 0;
+  }
+}

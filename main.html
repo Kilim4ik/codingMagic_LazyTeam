@@ -17,26 +17,30 @@
     <header></header>
     <main>
       <div class="wrapper">
-        <div class="search-input-container">
-          <input
-            class="search-input basic-input"
-            type="text"
-            placeholder="Введіть число"
-          />
-          <button class="search-input__button">
-            <svg class="search-icon">
-              <use xlink:href="./alt/src/svg/search.svg#search"></use>
-            </svg>
-          </button>
-        </div>
+        <span class="line"></span>
+        <div class="time-calc-section">
+          <h2>Калькулятор часу</h2>
+          <div class="time-calc-container">
+            <div class="search-input-container">
+              <input
+                class="search-input basic-input"
+                type="text"
+                id="time-calc-input"
+                placeholder="Введіть число"
+              />
+              <button class="search-input__button" id="time-calc-button">
+                <svg class="search-icon">
+                  <use xlink:href="./alt/src/svg/search.svg#search"></use>
+                </svg>
+              </button>
+            </div>
 
-        <input
-          class="basic-input"
-          type="text"
-          name=""
-          id=""
-          placeholder="Введіть число"
-        />
+            <svg class="time-calc__decor">
+              <use xlink:href="./alt/src/svg/"></use>
+            </svg>
+            <p id="time-calc-result"></p>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
