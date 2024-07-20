@@ -1,0 +1,100 @@
+* {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  border: 1px solid black;
+  background: #fff;
+}
+
+.line {
+  display: block;
+  width: 536px;
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 36px 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.basic-input {
+  width: 95px;
+  padding: 0;
+  background-color: #d7d7d7;
+  box-sizing: content-box;
+  color: #7e7e7e;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: none;
+}
+.search-input-container {
+  display: flex;
+  width: 150px;
+  background-color: #d7d7d7;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+}
+.search-input__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #000000;
+  border-radius: 0px 20px 20px 0px;
+}
+.search-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.the-largest-number {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.the-largest-number__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.the-largest-number__section__btn {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
+}
