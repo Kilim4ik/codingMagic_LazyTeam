@@ -12,6 +12,10 @@ function showTimeCalcResult() {
 function calculateTimeCalc() {
   const time = timeCalcInput.value;
   let result = ``;
+  if (isNaN(time)) {
+    result = "Не правильний формат запису";
+    return result;
+  }
   if (time >= 1440) result += `${Math.floor(time / 60 / 24)}дн. `;
   if (time >= 60) result += `${Math.floor((time / 60) % 24)}:`;
   result += `${time % 60} `;
