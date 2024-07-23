@@ -78,3 +78,38 @@ svg {
   width: 15px;
   height: 15px;
 }
+
+.scientists-card-container {
+  width: 620px;
+  display: grid;
+  grid-template-columns: repeat(4, 110px);
+  grid-template-rows: repeat(3, 110px);
+  gap: 36px 60px;
+  margin: 0 auto;
+}
+.scientists-variants-container {
+  margin-top: 36px;
+  display: grid;
+  gap: 10px 30px;
+  grid-template-columns: auto auto;
+  justify-content: start;
+}
+.scientists-variant {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.scientists-variant:last-child {
+  grid-column: span 2;
+}
+
+.scientist {
+  background-color: #cacaca;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0 22px;
+  font-size: 8px;
+}
