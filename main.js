@@ -4,7 +4,7 @@ const randomNumber = Math.round(Math.random() * 100);
 const inputTask2 = document.querySelector("#task2-input");
 const buttonTask2 = document.querySelector("#task2-button");
 const massegeTask2 = document.querySelector("#task2-massege");
-console.log(randomNumber);
+
 buttonTask2.addEventListener("click", () => {
   const userNum = inputTask2.value;
 
