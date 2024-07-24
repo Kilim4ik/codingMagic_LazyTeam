@@ -7,7 +7,11 @@ const massegeTask2 = document.querySelector("#task2-massege");
 
 buttonTask2.addEventListener("click", () => {
   const userNum = inputTask2.value;
-
+  if (isNaN(Number(userNum))) {
+    massegeTask2.innerHTML = `Ця гра підтримує тільки числа !`;
+    massegeTask2.style.color = "#990000";
+    return;
+  }
   if (randomNumber == Number(userNum)) {
     massegeTask2.innerHTML = `Вітаю, ви вгадали число! (${randomNumber}) `;
     massegeTask2.style.color = "#039900 ";
