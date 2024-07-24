@@ -100,6 +100,10 @@ svg {
   grid-template-columns: repeat(2, 25px);
   gap: 10px;
 }
+.standart-calc__operator:hover, .standart-calc__operator:focus {
+  background-color: #ed5e11;
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.25);
+}
 .standart-calc__result {
   background: #d7d7d7;
   color: #7e7e7e;
