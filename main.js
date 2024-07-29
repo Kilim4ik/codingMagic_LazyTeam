@@ -86,28 +86,118 @@ const scientists = [
     id: 12,
   },
 ];
+const scientistsContainer = document.querySelector(
+  ".scientists-card-container"
+);
 let scientistsCode = "";
-const scientistsNewCodes = () =>
-  scientists.forEach(({ name: scientistsName, surname, born, dead }) => {
+const scientistsNewCodes = (arr) => {
+  scientistsCode = "";
+  arr.forEach(({ name: scientistsName, surname, born, dead }) => {
     scientistsCode += `<div class="scientist"><p> ${scientistsName} ${surname} , ${born}-${dead} </p></div>`;
   });
-scientistsNewCodes();
-document.querySelector(".scientists-card-container").innerHTML = scientistsCode;
+};
+
+scientistsNewCodes(scientists);
+scientistsContainer.innerHTML = scientistsCode;
+
 const scientistsVariant = document.querySelectorAll(".scientists-variant");
 scientistsVariant.forEach((button) => {
   button.addEventListener("click", () => {
-    const text = button.innerHTML;
-    scientistsCode = "";
-    const txt = "Які вчені народилися в 19 ст.";
-    console.log(text == txt);
-    console.log(text);
-    console.log(txt);
+    const text = button.dataset.action;
+    let arr = [];
+
+    // buttonObj[text];
+
     switch (text) {
-      case "Які вчені народилися в 19 ст.":
-        const arr = scientists.filter(({ born }) => born > 1800 && born < 1900);
-        alert(arr);
+      case "What scientists were born in the 19th century.":
+        arr = scientists.filter(({ born }) => born > 1800 && born < 1900);
+        break;
+      case "Sort scientists alphabetically":
+        arr = scientists.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case "Sort scientists by the number of years lived":
+        arr = scientists.sort((a, b) => {
+          const liveA = a.dead - a.born;
+          const liveB = b.dead - b.born;
+          return liveB - liveA;
+        });
+        break;
+      case "Find the latest born scientist":
+        arr = scientists.reduce((acc, scientist) => {
+          if (!acc || scientist.born > acc.born) {
+            return scientist;
+          }
+          return acc;
+        }, null);
+
+      case "Find the birth year of Albert Einstein":
+        arr = scientists.filter(
+          ({ name, surname }) => name == "Albert" && surname == "Einstein"
+        );
+        break;
+      case "Find scientists whose surnames begin with the letter 'C'":
+        arr = scientists.filter(({ surname }) => surname.startsWith("C"));
+        break;
+      case "Remove all scientists whose name starts with 'A'":
+        arr = scientists.filter(({ name }) => !name.startsWith("A"));
+        break;
+      case "Find the scientist who lived the longest and the scientist who lived least":
+        const arrMoreAlive = scientists.sort((a, b) => {
+          const liveA = a.dead - a.born;
+          const liveB = b.dead - b.born;
+          return liveB - liveA;
+        });
+        arr.push(arrMoreAlive[0], arrMoreAlive[arrMoreAlive.length - 1]);
+        break;
+      case "Find scientists whose first and last names match":
+        arr = scientists.filter(({ name, surname }) => name[0] == surname[0]);
+
+        break;
       default:
         return;
     }
+
+    scientistsNewCodes(arr);
+    scientistsContainer.innerHTML = scientistsCode;
   });
 });
+
+// const buttonObj = {
+//   "What scientists were born in the 19th century.": () =>
+//     (arr = scientists.filter(({ born }) => born > 1800 && born < 1900)),
+//   "Sort scientists alphabetically": (arr = scientists.sort((a, b) =>
+//     a.name.localeCompare(b.name)
+//   )),
+//   "Sort scientists by the number of years lived": () =>
+//     (arr = scientists.sort((a, b) => {
+//       const liveA = a.dead - a.born;
+//       const liveB = b.dead - b.born;
+//       return liveB - liveA;
+//     })),
+//   "Find the latest born scientist": () =>
+//     (arr = scientists.reduce((acc, scientist) => {
+//       if (!acc || scientist.born > acc.born) {
+//         return scientist;
+//       }
+//       return acc;
+//     }, null)),
+//   "Find the birth year of Albert Einstein": () =>
+//     (arr = scientists.filter(
+//       ({ name, surname }) => name == "Albert" && surname == "Einstein"
+//     )),
+//   "Find scientists whose surnames begin with the letter 'C'": () =>
+//     (arr = scientists.filter(({ surname }) => surname.startsWith("C"))),
+//   "Remove all scientists whose name starts with 'A'": () =>
+//     (arr = scientists.filter(({ name }) => !name.startsWith("A"))),
+//   "Find the scientist who lived the longest and the scientist who lived least":
+//     () => {
+//       const arrMoreAlive = scientists.sort((a, b) => {
+//         const liveA = a.dead - a.born;
+//         const liveB = b.dead - b.born;
+//         return liveB - liveA;
+//       });
+//       arr.push(arrMoreAlive[0], arrMoreAlive[arrMoreAlive.length - 1]);
+//     },
+//   "Find scientists whose first and last names match": () =>
+//     (arr = scientists.filter(({ name, surname }) => name[0] == surname[0])),
+// };

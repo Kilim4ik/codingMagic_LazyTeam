@@ -1,9 +1,10 @@
 .scientists {
+  width: 100%;
   &-card-container {
     width: 620px;
-    display: grid;
-    grid-template-columns: repeat(4, 110px);
-    grid-template-rows: repeat(3, 110px);
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 36px 60px;
     margin: 0 auto;
   }
@@ -11,32 +12,28 @@
     margin-top: 36px;
     display: grid;
     gap: 10px 30px;
-    grid-template-columns: auto auto;
-    // align-content: start;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: start;
+    & > div:nth-child(odd) {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   &-variant {
     background-color: $txt-main-color;
     color: $background-color;
     padding: 10px 20px;
     border-radius: 20px;
-    // flex: 1;
-    // justify-self: center;
-    // align-self: flex-start;
-
-    // grid-column: span 1;
-    &:last-child {
-      //   display: flex;
-      //   grid-column-start: 1;
-      //   grid-column-end: 2;
-      //   grid-template-rows: 2;
-      //   align-items: center;
-      grid-column: span 2;
-    }
   }
 }
-
+.scientists-variants-container > div:last-child {
+  display: flex;
+  grid-column: 1/-1;
+  justify-self: center;
+}
 .scientist {
+  width: 110px;
+  height: 110px;
   background-color: #cacaca;
   border-radius: 20px;
   display: flex;
