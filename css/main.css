@@ -10,7 +10,6 @@
 
 .wrapper {
   margin: 0 auto;
-  border: 1px solid black;
   background: #fff;
 }
 
@@ -95,23 +94,29 @@ svg {
   display: grid;
   gap: 10px 30px;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: start;
+  align-items: start;
 }
 .scientists-variants-container > div:nth-child(odd) {
   display: flex;
   justify-content: flex-end;
 }
 .scientists-variant {
+  text-align: start;
   background-color: #000000;
+  max-width: 450px;
   color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .scientists-variants-container > div:last-child {
   display: flex;
   grid-column: 1/-1;
   justify-self: center;
+}
+.scientists-variants-container > div:last-child .scientists-variant {
+  max-width: 100%;
 }
 
 .scientist {

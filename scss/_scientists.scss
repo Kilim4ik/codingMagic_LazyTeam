@@ -13,23 +13,29 @@
     display: grid;
     gap: 10px 30px;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: start;
+    align-items: start;
     & > div:nth-child(odd) {
       display: flex;
       justify-content: flex-end;
     }
   }
   &-variant {
+    text-align: start;
     background-color: $txt-main-color;
+    max-width: 450px;
     color: $background-color;
     padding: 10px 20px;
     border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px #00000040;
   }
 }
 .scientists-variants-container > div:last-child {
   display: flex;
   grid-column: 1/-1;
   justify-self: center;
+  & .scientists-variant {
+    max-width: 100%;
+  }
 }
 .scientist {
   width: 110px;
