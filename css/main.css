@@ -79,6 +79,17 @@ svg {
   height: 15px;
 }
 
+.random-number__container {
+  width: 576px;
+  margin: 0 auto;
+}
+.random-number__game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+}
+
 .football-section {
   display: grid;
   justify-content: center;
