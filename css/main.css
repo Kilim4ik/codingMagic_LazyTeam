@@ -21,6 +21,15 @@
   border: 1px solid #000000;
 }
 
+a {
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 h1 {
   text-align: center;
   font-size: 24px;
@@ -97,4 +106,37 @@ svg {
   width: 182px;
   height: 35px;
   border-radius: 20px;
+}
+
+.footer__container {
+  width: 1091px;
+  padding: 60px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 165px;
+  height: 70px;
+}
+.footer__form-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
+}
+.footer__form-input {
+  width: 204px;
+  box-shadow: none;
+}
+.footer__form-button {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+.footer__form-text {
+  font-size: 6px;
+  line-height: 7px;
+  margin-top: 18px;
 }
