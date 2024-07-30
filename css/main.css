@@ -5,6 +5,7 @@
   font-size: 12px;
   line-height: 15px;
   color: #000000;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -14,18 +15,21 @@
 }
 
 .line {
+  display: block;
   width: 536px;
+  margin: 0 auto;
   border: 1px solid #000000;
 }
 
 h1 {
+  text-align: center;
   font-size: 24px;
   line-height: 30px;
   align-items: center;
 }
 
 h2 {
-  align-items: center;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   margin: 36px 0;
@@ -40,6 +44,7 @@ svg {
   width: 95px;
   padding: 0;
   background-color: #d7d7d7;
+  box-sizing: content-box;
   color: #7e7e7e;
   outline: none;
   border: none;
@@ -93,4 +98,24 @@ svg {
   position: absolute;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
+}
+
+.the-largest-number {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.the-largest-number__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.the-largest-number__section__btn {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
 }
