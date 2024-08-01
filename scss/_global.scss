@@ -7,6 +7,9 @@
   color: $txt-main-color;
   box-sizing: border-box;
 }
+.hidden {
+  display: none !important;
+}
 .wrapper {
   margin: 0 auto;
   border: 1px solid black;

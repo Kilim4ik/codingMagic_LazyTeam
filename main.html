@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
+      rel="stylesheet"
+    />
     <title>Coding Magic</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -17,21 +21,6 @@
   <body>
     <header></header>
     <main>
-      <div class="wrapper">
-        <div class="search-input-container">
-          <input
-            class="search-input basic-input"
-            type="text"
-            placeholder="Введіть число"
-          />
-          <button class="search-input__button">
-            <svg class="search-icon">
-              <use xlink:href="./alt/src/svg/search.svg#search"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
       <div class="wrapper">
         <h1>Введіть три числа</h1>
         <div class="the-largest-number">
@@ -78,7 +67,7 @@
             <li><a href="">Instagram: CodingMagic</a></li>
           </ul>
         </address>
-        <form action="">
+        <form class="footer__form" action="">
           <div class="footer__form-block">
             <input
               class="basic-input , footer__form-input"
@@ -96,6 +85,34 @@
         </form>
       </div>
     </footer>
+    <div class="subscribe-modal-backdrop hidden">
+      <div class="subscribe-modal">
+        <button class="subscribe-modal__button-close">
+          <svg class="subscribe-modal__button-close-icon">
+            <use
+              xlink:href="./alt/src/svg/modal-close-button.svg#modal-close-button"
+            ></use>
+          </svg>
+        </button>
+        <p class="subscribe-modal__text">Дякую за підписку!</p>
+
+        <svg class="modal__svg modal__svg--pos1">
+          <use xlink:href="./alt/src/svg/sword.svg#sword"></use>
+        </svg>
+        <svg class="modal__svg modal__svg--pos2">
+          <use
+            xlink:href="./alt/src/svg/game-development.svg#game-development"
+          ></use>
+        </svg>
+        <svg class="modal__svg modal__svg--pos3">
+          <use xlink:href="./alt/src/svg/puzzle.svg#puzzle"></use>
+        </svg>
+
+        <svg class="modal__svg modal__svg--pos4">
+          <use xlink:href="./alt/src/svg/tic-tac-toe.svg#tic-tac-toe"></use>
+        </svg>
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
