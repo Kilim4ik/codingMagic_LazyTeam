@@ -11,7 +11,7 @@ let result, firstNum, secondNum, mark;
 standCalcOperations.forEach((elem) => standCalc(elem));
 function standCalc(elem) {
   elem.addEventListener("click", (e) => {
-    if (elem.textContent == "=") {
+    if (elem.textContent === "=") {
       firstNum = Number(standCalcFirstNum.value);
       secondNum = Number(standCalcSecondNum.value);
       switch (mark) {
