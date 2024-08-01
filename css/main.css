@@ -90,3 +90,54 @@ svg {
   width: 100px;
   height: 2px;
 }
+
+.random-number__container {
+  width: 576px;
+  margin: 0 auto;
+}
+.random-number__game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.football-section {
+  display: grid;
+  justify-content: center;
+}
+.football-field {
+  display: block;
+  width: 720px;
+  height: 220px;
+  background-color: #5abb58;
+  border: 2px solid #000000;
+  border-radius: 37px;
+  position: relative;
+}
+.football-ball {
+  border-radius: 50px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+.the-largest-number {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.the-largest-number__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.the-largest-number__section__btn {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
+}
