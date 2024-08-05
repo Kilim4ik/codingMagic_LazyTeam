@@ -4,15 +4,19 @@ const footerSubscribeButton = document.querySelector(".footer__form-button");
 const SubscribeModalBackdrop = document.querySelector(
   ".subscribe-modal-backdrop"
 );
+const footerInput = document.querySelector(".footer__form-input");
 
 const body = document.querySelector("body");
 footerSubscribeButton.addEventListener("click", (e) => {
   e.preventDefault();
   if (footerValidation()) {
+    footerInput.style.background = "#d7d7d7";
     SubscribeModalBackdrop.classList.remove("hidden");
     body.style.overflow = "hidden";
 
     closeSubscribeModal();
+  } else {
+    footerInput.style.background = "rgba(256 , 0 , 0 , 0.3)";
   }
 });
 
