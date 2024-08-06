@@ -1,7 +1,7 @@
 "use strict";
 
 const footerSubscribeButton = document.querySelector(".footer__form-button");
-const SubscribeModalBackdrop = document.querySelector(
+const subscribeModalBackdrop = document.querySelector(
   ".subscribe-modal-backdrop"
 );
 const footerInput = document.querySelector(".footer__form-input");
@@ -10,30 +10,35 @@ const body = document.querySelector("body");
 footerSubscribeButton.addEventListener("click", (e) => {
   e.preventDefault();
   if (footerValidation()) {
-    footerInput.style.background = "#d7d7d7";
-    SubscribeModalBackdrop.classList.remove("hidden");
+    subscribeModalBackdrop.classList.remove("hidden");
     body.style.overflow = "hidden";
 
     closeSubscribeModal();
+  } else {
+  }
+});
+
+footerInput.addEventListener("input", (e) => {
+  if (footerValidation()) {
+    footerInput.style.background = "#d7d7d7";
   } else {
     footerInput.style.background = "rgba(256 , 0 , 0 , 0.3)";
   }
 });
 
-const footerSubscribeInput = document.querySelector(".footer__form-input");
-const SubscribeModalCloseButton = document.querySelector(
+const subscribeModalCloseButton = document.querySelector(
   ".subscribe-modal__button-close"
 );
 function footerValidation() {
-  return footerSubscribeInput.value.includes("@gmail") ? true : false;
+  return footerInput.value.includes("@") ? true : false;
 }
 function closeSubscribeModal() {
-  SubscribeModalCloseButton.addEventListener("click", () => {
-    SubscribeModalBackdrop.classList.add("hidden");
+  subscribeModalCloseButton.addEventListener("click", () => {
+    subscribeModalBackdrop.classList.add("hidden");
   });
   document.addEventListener("mousedown", (e) => {
-    if (e.target == SubscribeModalBackdrop) {
-      SubscribeModalBackdrop.classList.add("hidden");
+    if (e.target == subscribeModalBackdrop) {
+      subscribeModalBackdrop.classList.add("hidden");
     }
   });
 }
