@@ -141,3 +141,103 @@ svg {
   padding: 0 22px;
   font-size: 8px;
 }
+
+.time-calc-container {
+  width: 392px;
+  display: flex;
+  gap: 33px;
+  align-items: center;
+  margin: 0 auto;
+}
+.time-calc__decor {
+  width: 100px;
+  height: 2px;
+}
+
+.standart-calc__container {
+  width: 630px;
+  margin: 0 auto;
+}
+.standart-calc__game-container {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+.standart-calc__operator {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+}
+.standart-calc__operator-block {
+  display: grid;
+  grid-template-rows: repeat(2, 25px);
+  grid-template-columns: repeat(2, 25px);
+  gap: 10px;
+}
+.standart-calc__operator:hover, .standart-calc__operator:focus {
+  background-color: #ed5e11;
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.25);
+}
+.standart-calc__result {
+  background: #d7d7d7;
+  color: #7e7e7e;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.random-number__container {
+  width: 576px;
+  margin: 0 auto;
+}
+.random-number__game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.football-section {
+  display: grid;
+  justify-content: center;
+}
+.football-field {
+  display: block;
+  width: 720px;
+  height: 220px;
+  background-color: #5abb58;
+  border: 2px solid #000000;
+  border-radius: 37px;
+  position: relative;
+}
+.football-ball {
+  border-radius: 50px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+.the-largest-number {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.the-largest-number__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.the-largest-number__section__btn {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
+}

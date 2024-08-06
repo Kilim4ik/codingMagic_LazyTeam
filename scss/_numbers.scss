@@ -1,0 +1,21 @@
+.the-largest-number {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+
+        &__btn{
+        color: $background-color;
+        background-color: $txt-main-color;
+        border: none;
+        width: 182px;
+        height: 35px;
+        border-radius: 20px;
+      }
+    }
+}

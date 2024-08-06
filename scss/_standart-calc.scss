@@ -1,0 +1,41 @@
+.standart-calc {
+  &__container {
+    width: 630px;
+    margin: 0 auto;
+  }
+  &__game-container {
+    display: flex;
+
+    gap: 38px;
+    align-items: center;
+  }
+  &__operator {
+    display: flex;
+
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: $txt-main-color;
+    color: $background-color;
+    &-block {
+      display: grid;
+      grid-template-rows: repeat(2, 25px);
+      grid-template-columns: repeat(2, 25px);
+      gap: 10px;
+    }
+    &:hover,
+    &:focus {
+      background-color: #ed5e11;
+      box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__result {
+    background: $input-color;
+    color: $placeholder;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}

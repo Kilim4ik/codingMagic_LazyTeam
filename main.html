@@ -17,7 +17,7 @@
     <header></header>
     <main>
       <div class="wrapper">
-        <div class="scientists-section">
+        <section class="scientists-section">
           <span class="line"></span>
 
           <h2>Обери вченого/их</h2>
@@ -98,10 +98,137 @@
               </button>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="time-calc-section">
+          <span class="line"></span>
+
+          <h2>Калькулятор часу</h2>
+          <div class="time-calc-container">
+            <div class="search-input-container">
+              <input
+                class="search-input basic-input"
+                type="text"
+                id="time-calc-input"
+                placeholder="Введіть число"
+              />
+              <button class="search-input__button" id="time-calc-button">
+                <svg class="search-icon">
+                  <use xlink:href="./alt/src/svg/search.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+
+            <svg class="time-calc__decor">
+              <use
+                xlink:href="./alt/src/svg/time-calc-decor.svg#time-calc-decor"
+              ></use>
+            </svg>
+            <p id="time-calc-result"></p>
+          </div>
+        </section>
+        <section class="standart-calc">
+          <span class="line"></span>
+          <div class="standart-calc__container">
+            <h2>Калькулятор</h2>
+            <div class="standart-calc__game-container">
+              <input
+                class="basic-input"
+                type="text"
+                name=""
+                id="standart-calc-first-num"
+                placeholder="Введіть число"
+              />
+              <div class="standart-calc__operator-block">
+                <button class="standart-calc__operator">+</button>
+                <button class="standart-calc__operator">-</button>
+                <button class="standart-calc__operator">*</button>
+                <button class="standart-calc__operator">/</button>
+              </div>
+
+              <input
+                class="basic-input"
+                type="text"
+                name=""
+                id="standart-calc-second-num"
+                placeholder="Введіть число"
+              />
+              <button class="standart-calc__operator">=</button>
+
+              <p class="standart-calc__result">Результат</p>
+            </div>
+          </div>
+        </section>
+        <section class="random-number">
+          <span class="line"></span>
+          <div class="random-number__container">
+            <h2 class="random-number__header">
+              Вгадай число, яке загадав комп’ютер
+            </h2>
+            <div class="random-number__game-container">
+              <div class="search-input-container">
+                <input
+                  class="search-input basic-input"
+                  type="text"
+                  id="task2-input"
+                  placeholder="Введіть число"
+                />
+                <button id="task2-button" class="search-input__button">
+                  <svg class="search-icon">
+                    <use xlink:href="./alt/src/svg/search.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="random-number__massege" id="task2-massege"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="football-section">
+          <span class="line"></span>
+          <h2>Футбол</h2>
+          <div class="football-field">
+            <img
+              class="football-ball"
+              src="./alt/src/img/football-ball.jpg"
+              alt="ball"
+            />
+          </div>
+        </section>
+        <section>
+          <h1>Введіть три числа</h1>
+          <div class="the-largest-number">
+            <input
+              class="basic-input"
+              type="text"
+              id="num1"
+              placeholder="Введіть число"
+            /><br />
+            <input
+              class="basic-input"
+              type="text"
+              id="num2"
+              placeholder="Введіть число"
+            /><br />
+            <input
+              class="basic-input"
+              type="text"
+              id="num3"
+              placeholder="Введіть число"
+            /><br />
+          </div>
+          <div class="the-largest-number__section">
+            <button class="the-largest-number__section__btn" id="submit">
+              Знайти найбільше
+            </button>
+            <p id="result"></p>
+          </div>
+        </section>
       </div>
     </main>
     <footer></footer>
+    <script src="./main.js"></script>
+    <script src="./time-calc.js"></script>
+    <script src="./standart-calc.js"></script>
     <script src="./scients.js"></script>
   </body>
 </html>
