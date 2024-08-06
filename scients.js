@@ -102,11 +102,13 @@ scientistsContainer.innerHTML = scientistsCode;
 
 const scientistsVariant = document.querySelectorAll(".scientists-variant");
 scientistsVariant.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (e) => {
+    scientistsVariant.forEach((button) => {
+      button.classList.remove("active");
+    });
+    e.target.classList.add("active");
     const text = button.dataset.action;
     let arr = [];
-
-    // buttonObj[text];
 
     switch (text) {
       case "What scientists were born in the 19th century.":

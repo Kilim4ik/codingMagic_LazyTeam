@@ -108,6 +108,17 @@ svg {
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all 0.3s linear;
+}
+.scientists-variant:hover {
+  background-color: #d7d7d7;
+  color: #000000;
+}
+.scientists-variant.active {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000000;
+  box-shadow: none;
 }
 
 .scientists-variants-container > div:last-child {

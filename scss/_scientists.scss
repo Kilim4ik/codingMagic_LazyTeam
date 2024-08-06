@@ -27,6 +27,17 @@
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 3px 3px 0px 0px #00000040;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: $input-color;
+      color: $txt-main-color;
+    }
+    &.active {
+      background-color: $background-color;
+      color: $txt-main-color;
+      border: 1px solid $txt-main-color;
+      box-shadow: none;
+    }
   }
 }
 .scientists-variants-container > div:last-child {
