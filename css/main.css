@@ -10,7 +10,6 @@
 
 .wrapper {
   margin: 0 auto;
-  border: 1px solid black;
   background: #fff;
 }
 
@@ -77,6 +76,70 @@ svg {
 .search-icon {
   width: 15px;
   height: 15px;
+}
+
+.scientists {
+  width: 100%;
+}
+.scientists-card-container {
+  width: 620px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 60px;
+  margin: 0 auto;
+}
+.scientists-variants-container {
+  margin-top: 36px;
+  display: grid;
+  gap: 10px 30px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+.scientists-variants-container > div:nth-child(odd) {
+  display: flex;
+  justify-content: flex-end;
+}
+.scientists-variant {
+  text-align: start;
+  background-color: #000000;
+  max-width: 450px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all 0.3s linear;
+}
+.scientists-variant:hover {
+  background-color: #d7d7d7;
+  color: #000000;
+}
+.scientists-variant.active {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000000;
+  box-shadow: none;
+}
+
+.scientists-variants-container > div:last-child {
+  display: flex;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+.scientists-variants-container > div:last-child .scientists-variant {
+  max-width: 100%;
+}
+
+.scientist {
+  width: 110px;
+  height: 110px;
+  background-color: #cacaca;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0 22px;
+  font-size: 8px;
 }
 
 .time-calc-container {
