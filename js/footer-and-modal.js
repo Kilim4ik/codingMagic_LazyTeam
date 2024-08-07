@@ -35,10 +35,12 @@ function footerValidation() {
 function closeSubscribeModal() {
   subscribeModalCloseButton.addEventListener("click", () => {
     subscribeModalBackdrop.classList.add("hidden");
+    body.style.overflow = "scroll";
   });
   document.addEventListener("mousedown", (e) => {
     if (e.target == subscribeModalBackdrop) {
       subscribeModalBackdrop.classList.add("hidden");
+      body.style.overflow = "scroll";
     }
   });
 }
