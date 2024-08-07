@@ -1,0 +1,36 @@
+.footer {
+  &__container {
+    width: 1091px;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 165px;
+    height: 70px;
+  }
+  &__form {
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      gap: 46px;
+    }
+    &-input {
+      width: 204px;
+      box-shadow: none;
+    }
+    &-button {
+      background-color: $txt-main-color;
+      color: $background-color;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    &-text {
+      font-size: 6px;
+      line-height: 7px;
+      margin-top: 18px;
+    }
+  }
+}

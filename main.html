@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
+      rel="stylesheet"
+    />
     <title>Coding Magic</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -225,10 +229,73 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <svg class="footer__logo">
+          <use xlink:href="./alt/src/svg/logo-footer.svg#logo-footer"></use>
+        </svg>
+        <address>
+          <ul>
+            <li>
+              <a href="tel: +38 (123) 456 78 90">Тел: +38 (123) 456 78 90</a>
+            </li>
+            <li><a href="">E-Mail: codingmagic@gmail.com</a></li>
+            <li><a href="">Facebook: CodingMagic</a></li>
+            <li><a href="">Twitter: CodingMagic</a></li>
+            <li><a href="">Instagram: CodingMagic</a></li>
+          </ul>
+        </address>
+        <form class="footer__form" action="">
+          <div class="footer__form-block">
+            <input
+              class="basic-input , footer__form-input"
+              type="text"
+              name=""
+              id=""
+              placeholder="Ваша ел. адреса..."
+            />
+            <button class="footer__form-button">Підписатись</button>
+          </div>
+          <p class="footer__form-text">
+            *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+            сайті
+          </p>
+        </form>
+      </div>
+    </footer>
+    <div class="subscribe-modal-backdrop hidden">
+      <div class="subscribe-modal">
+        <button class="subscribe-modal__button-close">
+          <svg class="subscribe-modal__button-close-icon">
+            <use
+              xlink:href="./alt/src/svg/modal-close-button.svg#modal-close-button"
+            ></use>
+          </svg>
+        </button>
+        <p class="subscribe-modal__text">Дякую за підписку!</p>
+
+        <svg class="modal__svg modal__svg--pos1">
+          <use xlink:href="./alt/src/svg/sword.svg#sword"></use>
+        </svg>
+        <svg class="modal__svg modal__svg--pos2">
+          <use
+            xlink:href="./alt/src/svg/game-development.svg#game-development"
+          ></use>
+        </svg>
+        <svg class="modal__svg modal__svg--pos3">
+          <use xlink:href="./alt/src/svg/puzzle.svg#puzzle"></use>
+        </svg>
+
+        <svg class="modal__svg modal__svg--pos4">
+          <use xlink:href="./alt/src/svg/tic-tac-toe.svg#tic-tac-toe"></use>
+        </svg>
+      </div>
+    </div>
+
     <script src="./main.js"></script>
     <script src="./time-calc.js"></script>
     <script src="./standart-calc.js"></script>
     <script src="./scients.js"></script>
+    <script src="./footer-and-modal.js"></script>
   </body>
 </html>
