@@ -12,9 +12,23 @@
   display: none !important;
 }
 
+main {
+  background-image: url(/alt/src/img/main-background.png);
+  background-size: cover;
+  background-color: #eee;
+}
+
 .wrapper {
+  width: 1090px;
   margin: 0 auto;
   background: #fff;
+}
+
+.section {
+  padding-top: 36px;
+}
+.section:last-child {
+  padding-bottom: 36px;
 }
 
 .line {
@@ -34,6 +48,7 @@ a {
 }
 
 h1 {
+  padding-top: 36px;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
