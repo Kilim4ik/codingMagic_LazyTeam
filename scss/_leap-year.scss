@@ -1,0 +1,20 @@
+.search {
+    &-input {
+      padding: 10px;
+      border-radius: 20px 0 0 20px;
+      box-shadow: none;
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        background-color: $txt-main-color;
+        border-radius: 0px 20px 20px 0px;
+      }
+    }
+    &-icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
