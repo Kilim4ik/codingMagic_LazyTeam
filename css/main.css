@@ -106,6 +106,66 @@ svg {
   height: 15px;
 }
 
+.the-largest-number {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.the-largest-number__btn {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
+}
+.the-largest-number__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.slider-container {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.student {
+  display: none;
+}
+.student__img {
+  width: 150px;
+}
+
+.active {
+  display: block;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding-bottom: 125px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
 .scientists {
   width: 100%;
 }
@@ -255,19 +315,19 @@ svg {
   justify-content: center;
   gap: 38px;
 }
-.the-largest-number__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-}
-.the-largest-number__section__btn {
+.the-largest-number__btn {
   color: #fff;
   background-color: #000000;
   border: none;
   width: 182px;
   height: 35px;
   border-radius: 20px;
+}
+.the-largest-number__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .footer__container {
