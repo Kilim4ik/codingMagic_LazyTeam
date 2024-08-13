@@ -109,6 +109,9 @@ svg {
 .student {
   display: none;
 }
+.student__img {
+  width: 150px;
+}
 
 .active {
   display: block;
@@ -118,9 +121,9 @@ svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ddd;
+  background: none;
   border: none;
-  padding: 10px;
+  padding-bottom: 125px;
   cursor: pointer;
 }
 

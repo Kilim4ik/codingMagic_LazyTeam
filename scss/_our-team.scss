@@ -7,6 +7,10 @@
 
 .student {
     display: none;
+
+    &__img {
+        width: 150px;
+    }
 }
 
 .active {
@@ -17,9 +21,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #ddd;
+    background: none;
     border: none;
-    padding: 10px;
+    padding-bottom: 125px;
     cursor: pointer;
 }
 
