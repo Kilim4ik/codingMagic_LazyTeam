@@ -10,7 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
@@ -19,7 +20,243 @@
   <input class="search-input" type="number" id="yearInput" placeholder="Введіть рік народження">
   <button class="search-input__button" id="checkButton"><img class="search-icon" src="./images/magnifying-glass.png" alt="magnifying glass"></button>
   <p id="result"></p>
-  <script src="./main.js"></script>
+
+  <header></header>
+  <main>
+    <div class="wrapper">
+      <h1>Популярні інетрактивні ігри</h1>
+      <section class="section random-number">
+        <span class="line"></span>
+        <div class="random-number__container">
+          <h2 class="random-number__header">
+            Вгадай число, яке загадав комп’ютер
+          </h2>
+          <div class="random-number__game-container">
+            <div class="search-input-container">
+              <input class="search-input basic-input" type="text" id="task2-input" placeholder="Введіть число" />
+              <button id="task2-button" class="search-input__button">
+                <svg class="search-icon">
+                  <use xlink:href="./alt/src/svg/search.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="random-number__massege" id="task2-massege"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section standart-calc">
+        <span class="line"></span>
+        <div class="standart-calc__container">
+          <h2>Калькулятор</h2>
+          <div class="standart-calc__game-container">
+            <input class="basic-input" type="text" name="" id="standart-calc-first-num" placeholder="Введіть число" />
+            <div class="standart-calc__operator-block">
+              <button class="standart-calc__operator">+</button>
+              <button class="standart-calc__operator">-</button>
+              <button class="standart-calc__operator">*</button>
+              <button class="standart-calc__operator">/</button>
+            </div>
+
+</body>
+
+</html>
+<input class="basic-input" type="text" name="" id="standart-calc-second-num" placeholder="Введіть число" />
+<button class="standart-calc__operator">=</button>
+
+<p class="standart-calc__result">Результат</p>
+</div>
+</div>
+</section>
+<section class="section time-calc-section">
+  <span class="line"></span>
+
+  <h2>Калькулятор часу</h2>
+  <div class="time-calc-container">
+    <div class="search-input-container">
+      <input class="search-input basic-input" type="text" id="time-calc-input" placeholder="Введіть число" />
+      <button class="search-input__button" id="time-calc-button">
+        <svg class="search-icon">
+          <use xlink:href="./alt/src/svg/search.svg#search"></use>
+        </svg>
+      </button>
+    </div>
+
+    <svg class="time-calc__decor">
+      <use xlink:href="./alt/src/svg/time-calc-decor.svg#time-calc-decor"></use>
+    </svg>
+    <p id="time-calc-result"></p>
+  </div>
+</section>
+<section class="section football-section">
+  <span class="line"></span>
+  <h2>Футбол</h2>
+  <div class="football-field">
+    <img class="football-ball" src="./alt/src/img/football-ball.jpg" alt="ball" />
+  </div>
+</section>
+<section class="wrapper">
+  <h2>Введіть три числа</h2>
+  <div class="the-largest-number">
+    <input class="basic-input" type="text" id="num1" placeholder="Введіть число" /><br />
+    <input class="basic-input" type="text" id="num2" placeholder="Введіть число" /><br />
+    <input class="basic-input" type="text" id="num3" placeholder="Введіть число" /><br />
+  </div>
+  <div class="the-largest-number__section">
+    <button class="the-largest-number__btn" id="submit">
+      Знайти найбільше
+    </button>
+    <p id="result"></p>
+  </div>
+</section>
+<section class="wrapper">
+  <h2>Наша команда</h2>
+  <div class="slider-container">
+    <button id="prev" class="nav-button"><svg width="52" height="102" viewBox="0 0 52 102" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M51 1L1 51L51 101" stroke="black" />
+      </svg></button>
+
+    <div class="student active">
+      <img class="student__img" src="./images/Kilim4ik github-pfp.png" alt="Kilim4ik">
+      <h2>Данило</h2>
+      <p>Зробив секції "Калькулятор часу", "Вгадай число", "Калькулятор", "Футбол", "Вчені"</p>
+    </div>
+    <div class="student">
+      <img class="student__img" src="./images/Nazarius github-pfp.png" alt="Nazarius">
+      <h2>Назар</h2>
+      <p>Зробив секції "Камінь-Ножиці-Папір", "Найбільше число", "Високосний калькулятор", "Наша
+        команда"</p>
+    </div>
+
+    <button id="next" class="nav-button"><svg width="52" height="102" viewBox="0 0 52 102" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L51 51L1 101" stroke="black" />
+      </svg></button>
+  </div>
+</section>
+
+<section class="section scientists-section">
+  <span class="line"></span>
+
+  <h2>Обери вченого/их</h2>
+  <div class="scientists-card-container"></div>
+  <div class="scientists-variants-container">
+    <div class="">
+      <button class="scientists-variant" data-action="What scientists were born in the 19th century.">
+        Які вчені народилися в 19 ст.
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Find the birth year of Albert Einstein">
+        Знайти рік народження Albert Einshtein
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Sort scientists alphabetically">
+        Відсортувати вчених за алфавітом
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Find scientists whose surnames begin with the letter 'C'">
+        Знайти вчених, прізвища яких починаються на на літеру “С”
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Sort scientists by the number of years lived">
+        Відсортувати вчених за кількістю прожитих років
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Remove all scientists whose name starts with 'A'">
+        Видалити всіх вчених, ім’я яких починається на “А”
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Find the latest born scientist">
+        Знайти вченого, який народився найпізніше
+      </button>
+    </div>
+
+    <div class="">
+      <button class="scientists-variant"
+        data-action="Find the scientist who lived the longest and the scientist who lived least">
+        Знайти вченого, який прожив найдовше і вченого, який прожив
+        найменше
+      </button>
+    </div>
+    <div class="">
+      <button class="scientists-variant" data-action="Find scientists whose first and last names match">
+        Знайти вчених, в яких співпадають перші літери імені і прізвища
+      </button>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <svg class="footer__logo">
+      <use xlink:href="./alt/src/svg/logo-footer.svg#logo-footer"></use>
+    </svg>
+    <address>
+      <ul>
+        <li>
+          <a href="tel: +38 (123) 456 78 90">Тел: +38 (123) 456 78 90</a>
+        </li>
+        <li><a href="">E-Mail: codingmagic@gmail.com</a></li>
+        <li><a href="">Facebook: CodingMagic</a></li>
+        <li><a href="">Twitter: CodingMagic</a></li>
+        <li><a href="">Instagram: CodingMagic</a></li>
+      </ul>
+    </address>
+    <form class="footer__form" action="">
+      <div class="footer__form-block">
+        <input class="basic-input , footer__form-input" type="text" name="" id="" placeholder="Ваша ел. адреса..." />
+        <button class="footer__form-button">Підписатись</button>
+      </div>
+      <p class="footer__form-text">
+        *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+        сайті
+      </p>
+    </form>
+  </div>
+</footer>
+<div class="subscribe-modal-backdrop hidden">
+  <div class="subscribe-modal">
+    <button class="subscribe-modal__button-close">
+      <svg class="subscribe-modal__button-close-icon">
+        <use xlink:href="./alt/src/svg/modal-close-button.svg#modal-close-button"></use>
+      </svg>
+    </button>
+    <p class="subscribe-modal__text">Дякую за підписку!</p>
+
+    <svg class="modal__svg modal__svg--pos1">
+      <use xlink:href="./alt/src/svg/sword.svg#sword"></use>
+    </svg>
+    <svg class="modal__svg modal__svg--pos2">
+      <use xlink:href="./alt/src/svg/game-development.svg#game-development"></use>
+    </svg>
+    <svg class="modal__svg modal__svg--pos3">
+      <use xlink:href="./alt/src/svg/puzzle.svg#puzzle"></use>
+    </svg>
+
+    <svg class="modal__svg modal__svg--pos4">
+      <use xlink:href="./alt/src/svg/tic-tac-toe.svg#tic-tac-toe"></use>
+    </svg>
+  </div>
+</div>
+
+<script src="./js/random-naumber.js"></script>
+<script src="./js/time-calc.js"></script>
+<script src="./js/standart-calc.js"></script>
+<script src="./js/football.js"></script>
+<script src="./js/numbers.js"></script>
+<script src="./js/scients.js"></script>
+<script src="./js/footer-and-modal.js"></script>
+<script src="./js/our-team.js"></script>
+<script src="./js/the-largest-number.js"></script>
+<script src="./main.js"></script>
 </body>
 
 </html>

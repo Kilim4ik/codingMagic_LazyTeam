@@ -1,0 +1,12 @@
+.random-number {
+  &__container {
+    width: 576px;
+    margin: 0 auto;
+  }
+  &__game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+  }
+}
